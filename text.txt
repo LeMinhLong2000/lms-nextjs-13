@@ -20,3 +20,9 @@ npm i lucide-react
 
 
 npx shadcn@latest add sheet
+npx shadcn@latest add form
+npx shadcn@latest add input
+
+npm i zod
+npm i axios
+npm i react-hot-toast
