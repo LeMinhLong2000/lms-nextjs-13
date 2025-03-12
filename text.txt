@@ -1,0 +1,22 @@
+nextjs13 (13.4.12) tailwind 3
+
+npx shadcn@2.3.0 init
+
+
+npx shadcn@latest add button
+
+
+npm install @clerk/nextjs
+
+
+(auth)/(routes)/sign-up/[[...sign-up]]/page.tsx
+(auth)/(routes)/sign-in/[[...sign-in]]/page.tsx
+
+
+https://logoipsum.com/
+
+
+npm i lucide-react
+
+
+npx shadcn@latest add sheet
