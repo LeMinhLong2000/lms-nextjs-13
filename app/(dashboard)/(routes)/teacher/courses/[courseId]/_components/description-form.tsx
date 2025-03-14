@@ -19,11 +19,10 @@ import { z } from "zod";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { Course } from "@prisma/client";
 
 interface DescriptionFormProps {
-  initialData: {
-    description: string;
-  };
+  initialData: Course;
   courseId: string;
 }
 
@@ -43,7 +42,9 @@ export const DescriptionForm = ({
   const toggleEdit = () => setIsEditing((current) => !current);
 
   const form = useForm<z.infer<typeof formSchema>>({
-    defaultValues: initialData,
+    defaultValues: {
+      description: initialData.description || "",
+    },
     resolver: zodResolver(formSchema),
   });
 
